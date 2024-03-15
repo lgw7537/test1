@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 190px;
+    margin-bottom: 200px;
+
+}
+
+.imageContainer {
+    position: relative;
+    display: flex;
+    /* 이미지 컨테이너를 상대적 위치로 설정 */
+    justify-content: center;
+    border-radius: 20px;
+    /* 원하는 둥근 모서리의 크기를 설정하세요 */
+
+}
+
+.feature {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* 이미지 위에 텍스트를 중앙 정렬로 배치 */
+    margin-top: -100px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 24px;
+}
+
+.description {
+    margin-left: 250px;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: large
+}

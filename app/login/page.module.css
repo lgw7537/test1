@@ -1,0 +1,111 @@
+/* page.module.css */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.backgroundGif {
+    background-image: url('../gif/test.gif');
+    /* 배경 이미지 경로 설정 */
+    background-size: cover;
+    /* 배경 이미지가 컨테이너를 꽉 채우도록 설정 */
+    background-position: center;
+    /* 배경 이미지 중앙 정렬 */
+}
+
+.loginForm {
+    width: 250px;
+    padding: 10rem;
+    background: rgb(229, 232, 243);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    animation: formAppear 1s ease-out forwards;
+}
+
+@keyframes formAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loginForm h2 {
+    text-align: center;
+    margin-bottom: rem;
+    color: #333;
+    font-weight: 100;
+}
+
+.inputGroup {
+    margin-bottom: 1.2rem;
+    position: relative;
+    width: 230px;
+    /*인풋창 넓이*/
+
+}
+
+.inputGroup input {
+
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+}
+
+.inputGroup input:focus {
+    outline: none;
+    border-color: #88add4;
+
+}
+
+.loginButton {
+    width: 105%;
+    /*로그인버튼*/
+    padding: 0.75rem;
+    background-color: rgb(60, 196, 162);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.loginButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.loginButton:active {
+    transform: translateY(1px);
+}
+
+.formFooter {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+}
+
+.formFooter a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.formFooter a:hover {
+    color: #0056b3;
+}

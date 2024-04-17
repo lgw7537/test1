@@ -1,0 +1,12 @@
+.mychart {
+    display: grid;
+    /* Grid 사용 */
+    place-items: center;
+    /* 가로 및 세로 중앙 정렬 */
+    height: 100vh;
+    /* 뷰포트 높이의 100% */
+    margin-top: 50px;
+    /* 상단 여백 추가 */
+
+    width: 40px;
+}

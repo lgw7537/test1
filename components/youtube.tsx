@@ -23,7 +23,8 @@ const YoutubeVideo: React.FC<YoutubeVideoProps> = ({ videoId }) => {
                 title="Embedded youtube"
             ></iframe>
             <div className={styles.event}>
-                <a href='/more-info'>사용방법 더보기</a>
+                <Link href='/Moreinfo'>사용방법 더보기</Link>
+                <Link href='/login'>로그인폼 가기</Link>
             </div>
         </div>
     );
